@@ -1,7 +1,7 @@
 export type Project = {
   slug: string;
   title: string;
-  category: "Full-stack" | "Frontend" | "Backend" | "Other";
+  category: "Full-stack" | "Frontend" | "Backend" | "Software Development" | "Other";
   desc: string;
   tags: readonly string[];
   link: string;      // GitHub or live
@@ -21,7 +21,7 @@ export const projects: readonly Project[] = [
   {
     slug: "PrisonEscape",
     title: "Prison Escape",
-    category: "Full-stack",
+    category: "Software Development",
     desc: "2D Game created in Java and managed with Apache Maven. ",
     tags: ["Java", "JUnit", "Apache Maven"],
     link: "https://github.com/IliaFatemi/Prison-Escape",
@@ -30,7 +30,7 @@ export const projects: readonly Project[] = [
   {
     slug: "BeerIQ",
     title: "BeerIQ",
-    category: "Full-stack",
+    category: "Software Development",
     desc: "A beer locator made with Android Studios using Kotlin.",
     tags: ["Kotlin", "Android Studios"],
     link: "https://github.com/vincenteab/BeerIQ",
