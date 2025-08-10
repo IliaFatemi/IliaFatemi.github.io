@@ -18,11 +18,14 @@ jobs:
     runs-on: ubuntu-latest
     environment:
       name: github-pages
-      url: ${{ steps.deploy.outputs.page_url }}
+      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
-      - id: deploy
-        uses: withastro/action@v2
+      # Build and upload the artifact named "github-pages"
+      - uses: withastro/action@v2
         with:
           node-version: 20
           package-manager: npm
+      # 🔽 Actually publish the artifact to Pages
+      - id: deployment
+        uses: actions/deploy-pages@v4
