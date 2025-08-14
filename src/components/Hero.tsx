@@ -79,8 +79,8 @@ export default function Hero() {
   const typed = useTyped(
     [
       "Full-stack developer",
-      "Angular • Flask • PostgreSQL",
-      "Deployed on Azure",
+      "Angular • Flask • PostgreSQL • Python",
+      "🏂 ⛰️ 🚴 💻",
     ],
     { typeSpeed: 45, backSpeed: 30, endHold: 1100, startHold: 400 }
   );
