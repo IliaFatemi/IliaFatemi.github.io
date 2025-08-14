@@ -44,5 +44,14 @@ export const projects: readonly Project[] = [
     tags: ["Node", "PostgreSQL", "Angular", "GCP"],
     link: "https://github.com/IliaFatemi/SoBadItsGood-WebApp",
     img: "https://raw.githubusercontent.com/IliaFatemi/SoBadItsGood-WebApp/refs/heads/master/sobaditsgood/src/assets/weblogo.png"
+  },
+  {
+    slug: "ArcadeAtlas",
+    title: "ArcadeAtlas",
+    category: "Frontend",
+    desc: "A sleek, modern game explorer with search, rich details, media, and local collections.",
+    tags: ["React", "Flask", "REST"],
+    link: "https://arcadeatlas.netlify.app/",
+    img: "/ArcadeAtlasLogo_512px.png"
   }
 ] as const;
